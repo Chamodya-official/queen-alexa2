@@ -85,7 +85,7 @@ async function whatsAsena () {
 
     conn.on ('credentials-updated', async () => {
         console.log(
-            chalk.blueBright.italic('🧚‍♀️Login information updated!💫')
+            chalk.blueBright.italic('✅ Login information updated!')
         );
 
         const authInfo = conn.base64EncodedAuthInfo();
@@ -100,7 +100,7 @@ async function whatsAsena () {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
-${chalk.blue.italic('⦁═QUEEN ALEXA═⦁ Connecting to WhatsApp... Please wait.')}`);
+${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
     });
     
 
@@ -110,7 +110,7 @@ ${chalk.blue.italic('⦁═QUEEN ALEXA═⦁ Connecting to WhatsApp... Please wa
         );
 
         console.log(
-            chalk.blueBright.italic('🧙 Installing external plugins...')
+            chalk.blueBright.italic('⬇️ Installing external plugins...')
         );
 
         var plugins = await plugindb.PluginDB.findAll();
@@ -126,7 +126,7 @@ ${chalk.blue.italic('⦁═QUEEN ALEXA═⦁ Connecting to WhatsApp... Please wa
         });
 
         console.log(
-            chalk.blueBright.italic('🇱🇰 Installing plugins...')
+            chalk.blueBright.italic('🌈  Installing plugins...')
         );
 
         fs.readdirSync('./plugins').forEach(plugin => {
@@ -136,7 +136,7 @@ ${chalk.blue.italic('⦁═QUEEN ALEXA═⦁ Connecting to WhatsApp... Please wa
         });
 
         console.log(
-            chalk.green.bold('Queen 🧚‍♀️ alexa')
+            chalk.green.bold('Bot is now active in your account 🥳')
         );
     });
     
@@ -248,8 +248,8 @@ ${chalk.blue.italic('⦁═QUEEN ALEXA═⦁ Connecting to WhatsApp... Please wa
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n*⦁◊═⦁QUEEN 👸 ALEXA⦁═◊⦁*\n*◄━━━━━━━⦁⦁◯⦁⦁━━━━━━━━►*\n' +
-                                    '\n\n*⭕ ' + error + '*\n'
+                                await conn.sendMessage(conn.user.jid, '*~🌀______~ ◉𝐁𝐥𝐚𝐜𝐤𝐏𝐚𝐧𝐭𝐡𝐞𝐫◉ ~_____🌀~*' +
+                                    '\n\n*🧞‍♂️ ' + error + '*\n'
                                     , MessageType.text);
                             }
                         }
